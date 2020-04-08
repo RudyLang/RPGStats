@@ -11,5 +11,17 @@ Stats::Stats()
 	WIS = 0;
 	CHA = 0;
 
-	std::cout << "Initialized base stats.";
+	std::cout << "Initialized base stats." << "\n";
+}
+
+Stats::Stats(int STRin, int DEXin, int CONin, int INTin, int WISin, int CHAin)
+{
+	STR = STRin;
+	DEX = DEXin;
+	CON = CONin;
+	INT = INTin;
+	WIS = WISin;
+	CHA = CHAin;
+
+	std::cout << "Initialized base stats." << "\n";
 }

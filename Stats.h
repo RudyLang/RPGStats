@@ -14,6 +14,7 @@ private:
 
 public:
 	Stats();
+	Stats(int STRin, int DEXin, int CONin, int INTin, int WISin, int CHAin);
 };
 
 #endif
