@@ -2,9 +2,9 @@
 
 class CharacterClass
 {
-private:
+public:
 	Stats stats;
 
-public:
+
 	CharacterClass();
 };
