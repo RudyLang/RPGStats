@@ -25,3 +25,13 @@ Stats::Stats(int STRin, int DEXin, int CONin, int INTin, int WISin, int CHAin)
 
 	std::cout << "Initialized base stats." << "\n";
 }
+
+void Stats::SetStats(const int& STRin, const int& DEXin, const int& CONin, const int& INTin, const int& WISin, const int& CHAin)
+{
+	STR = STRin;
+	DEX = DEXin;
+	CON = CONin;
+	INT = INTin;
+	WIS = WISin;
+	CHA = CHAin;
+}

@@ -14,6 +14,7 @@ private:
 public:
 	Stats();
 	Stats(int STRin, int DEXin, int CONin, int INTin, int WISin, int CHAin);
+	void SetStats(const int& STRin, const int& DEXin, const int& CONin, const int& INTin, const int& WISin, const int& CHAin);
 };
 
 #endif

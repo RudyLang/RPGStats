@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Include\CharacterClass.h" />
+    <ClInclude Include="Include\ClassType.h" />
     <ClInclude Include="Include\Equipment.h" />
     <ClInclude Include="Include\Item.h" />
     <ClInclude Include="Source\pch.h" />
