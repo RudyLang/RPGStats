@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "CharacterClass.h"
+#include "../Include/CharacterClass.h"
 
 CharacterClass::CharacterClass()
 {

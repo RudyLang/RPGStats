@@ -1,3 +1,6 @@
+#ifndef _SKILL_H
+#define _SKILL_H
+
 #include "pch.h"
 #include <iostream>
 #include "MagicType.h"
@@ -14,3 +17,5 @@ public:
 
 	Skill (std::string nameIn, std::string descriptionIn, bool passiveIn, bool activeIn, std::pair <size_t, size_t> damangeRangeIn, MagicType magicTypeIn);
 };
+
+#endif

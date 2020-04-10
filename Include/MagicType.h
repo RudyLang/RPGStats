@@ -1,3 +1,6 @@
+#ifndef _MAGIC_TYPE_H
+#define _MAGIC_TYPE_H
+
 enum class MagicType
 {
 	Earth,
@@ -10,3 +13,5 @@ enum class MagicType
 	Light,
 	Dark
 };
+
+#endif

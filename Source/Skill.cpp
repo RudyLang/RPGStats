@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "Skill.h"
+#include "../Include/Skill.h"
 
 Skill::Skill(std::string nameIn, std::string descriptionIn, bool passiveIn, bool activeIn, std::pair <size_t, size_t> damangeRangeIn, MagicType magicTypeIn) 
 {

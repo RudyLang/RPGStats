@@ -1,4 +1,6 @@
-#pragma once
+#ifndef _SLOT_H
+#define _SLOT_H
+
 enum class Slot
 {
 	Head,
@@ -12,3 +14,5 @@ enum class Slot
 	Legs,
 	Feet
 };
+
+#endif

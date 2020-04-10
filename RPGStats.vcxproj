@@ -151,28 +151,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CharacterClass.h" />
-    <ClInclude Include="Equipment.h" />
-    <ClInclude Include="Item.h" />
-    <ClInclude Include="pch.h" />
-    <ClInclude Include="Skill.h" />
-    <ClInclude Include="Slot.h" />
-    <ClInclude Include="Stats.h" />
-    <ClInclude Include="MagicType.h" />
+    <ClInclude Include="Include\CharacterClass.h" />
+    <ClInclude Include="Include\Equipment.h" />
+    <ClInclude Include="Include\Item.h" />
+    <ClInclude Include="Source\pch.h" />
+    <ClInclude Include="Include\Skill.h" />
+    <ClInclude Include="Include\Slot.h" />
+    <ClInclude Include="Include\Stats.h" />
+    <ClInclude Include="Include\MagicType.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CharacterClass.cpp" />
-    <ClCompile Include="Equipment.cpp" />
-    <ClCompile Include="Item.cpp" />
-    <ClCompile Include="pch.cpp">
+    <ClCompile Include="Source\CharacterClass.cpp" />
+    <ClCompile Include="Source\Equipment.cpp" />
+    <ClCompile Include="Source\Item.cpp" />
+    <ClCompile Include="Source\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Skill.cpp" />
-    <ClCompile Include="Stats.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\Skill.cpp" />
+    <ClCompile Include="Source\Stats.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

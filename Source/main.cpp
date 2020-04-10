@@ -1,9 +1,9 @@
 #include "pch.h"
 #include <iostream>
-#include "Stats.h"
-#include "Item.h"
-#include "Equipment.h"
-#include "Skill.h"
+#include "../Include/Stats.h"
+#include "../Include/Item.h"
+#include "../Include/Equipment.h"
+#include "../Include/Skill.h"
 
 int main()
 {

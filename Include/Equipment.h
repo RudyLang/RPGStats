@@ -1,3 +1,6 @@
+#ifndef _EQUIPMENT_H
+#define _EQUIPMENT_H
+
 #include "Item.h"
 #include "Slot.h"
 #include "Stats.h"
@@ -11,3 +14,5 @@ private:
 public:
 	Equipment(std::string nameIn, std::string descriptionIn, float modifierIn, Slot slotIn, Stats statsIn);
 };
+
+#endif
