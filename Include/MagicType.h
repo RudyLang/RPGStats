@@ -9,9 +9,10 @@ enum class MagicType
 	Air,
 	Poison,
 	Acid,
-	Psionic,
+	Psychic,
 	Light,
-	Dark
+	Dark,
+	Electric
 };
 
 #endif

@@ -42,6 +42,9 @@
     <ClInclude Include="Include\ClassType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Include\SkillList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\CharacterClass.cpp">

@@ -155,6 +155,7 @@
     <ClInclude Include="Include\ClassType.h" />
     <ClInclude Include="Include\Equipment.h" />
     <ClInclude Include="Include\Item.h" />
+    <ClInclude Include="Include\SkillList.h" />
     <ClInclude Include="Source\pch.h" />
     <ClInclude Include="Include\Skill.h" />
     <ClInclude Include="Include\Slot.h" />

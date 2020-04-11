@@ -12,3 +12,8 @@ Skill::Skill(std::string nameIn, std::string descriptionIn, bool passiveIn, bool
 
 	std::cout << "Skill initialized!" << "\n";
 }
+
+std::string Skill::GetSkillName()
+{
+	return name;
+}

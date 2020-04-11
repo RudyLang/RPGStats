@@ -1,5 +1,8 @@
 #include "pch.h"
+#include <iostream>
+#include <string>
 #include "../Include/CharacterClass.h"
+#include "../Include/SkillList.h"
 
 CharacterClass::CharacterClass(ClassType selectedClass)
 {
@@ -33,6 +36,9 @@ CharacterClass::CharacterClass(ClassType selectedClass)
 		stats.SetStats(12, 12, 12, 18, 12, 12);
 		classStats = stats;
 		std::cout << "Welcome Wizard!" << "\n";
+		AddSkill(ability::fire_ball);
+		AddSkill(ability::thunder_wave);
+		AddSkill(ability::acid_cage);
 		break;
 
 	case ClassType::Cleric:
@@ -58,4 +64,10 @@ CharacterClass::CharacterClass(ClassType selectedClass)
 	}
 
 
+}
+
+void CharacterClass::AddSkill(Skill& newSkill)
+{
+	classSkills.push_back(newSkill);
+	std::cout << "You've learned " << newSkill.GetSkillName() << "\n";
 }

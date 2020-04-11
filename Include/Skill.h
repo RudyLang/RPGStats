@@ -16,6 +16,7 @@ public:
 	MagicType magicType;
 
 	Skill (std::string nameIn, std::string descriptionIn, bool passiveIn, bool activeIn, std::pair <size_t, size_t> damangeRangeIn, MagicType magicTypeIn);
+	std::string GetSkillName();
 };
 
 #endif

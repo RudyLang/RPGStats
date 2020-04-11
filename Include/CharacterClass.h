@@ -16,6 +16,7 @@ public:
 
 
 	CharacterClass(ClassType selectedClass);
+	void AddSkill(Skill& newSkill);
 };
 
 #endif
