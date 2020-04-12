@@ -3,7 +3,7 @@
 
 #include "Skill.h"
 
-namespace ability
+namespace combat
 {
 	/* MELEE */
 

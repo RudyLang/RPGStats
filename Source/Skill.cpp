@@ -9,8 +9,6 @@ Skill::Skill(std::string nameIn, std::string descriptionIn, bool passiveIn, bool
 	active = activeIn;
 	damageRange = damangeRangeIn;
 	magicType = magicTypeIn;
-
-	std::cout << "Skill initialized!" << "\n";
 }
 
 std::string Skill::GetSkillName()

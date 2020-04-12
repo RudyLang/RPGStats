@@ -10,8 +10,6 @@ Stats::Stats()
 	INT = 0;
 	WIS = 0;
 	CHA = 0;
-
-	std::cout << "Initialized base stats." << "\n";
 }
 
 Stats::Stats(int STRin, int DEXin, int CONin, int INTin, int WISin, int CHAin)
@@ -22,8 +20,6 @@ Stats::Stats(int STRin, int DEXin, int CONin, int INTin, int WISin, int CHAin)
 	INT = INTin;
 	WIS = WISin;
 	CHA = CHAin;
-
-	std::cout << "Initialized base stats." << "\n";
 }
 
 void Stats::SetStats(const int& STRin, const int& DEXin, const int& CONin, const int& INTin, const int& WISin, const int& CHAin)

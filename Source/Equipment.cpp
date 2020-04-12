@@ -9,6 +9,4 @@ Equipment::Equipment(std::string nameIn, std::string descriptionIn, float modifi
 	modifier = modifierIn;
 	slot = slotIn;
 	stats = statsIn;
-
-	std::cout << "Equipment Initialized" << "\n";
 }

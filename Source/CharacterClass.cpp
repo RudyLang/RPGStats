@@ -3,6 +3,7 @@
 #include <string>
 #include "../Include/CharacterClass.h"
 #include "../Include/SkillList.h"
+#include "../Include/ArmourList.h"
 
 CharacterClass::CharacterClass(ClassType selectedClass)
 {
@@ -36,9 +37,10 @@ CharacterClass::CharacterClass(ClassType selectedClass)
 		stats.SetStats(12, 12, 12, 18, 12, 12);
 		classStats = stats;
 		std::cout << "Welcome Wizard!" << "\n";
-		AddSkill(ability::fire_ball);
-		AddSkill(ability::thunder_wave);
-		AddSkill(ability::acid_cage);
+		AddSkill(combat::fire_ball);
+		AddSkill(combat::thunder_wave);
+		AddSkill(combat::acid_cage);
+		AddEquipment(armour::wizards_robe);
 		break;
 
 	case ClassType::Cleric:
@@ -62,12 +64,16 @@ CharacterClass::CharacterClass(ClassType selectedClass)
 		std::cout << "Welcome Jack of all Trades!" << "\n";
 		break;
 	}
-
-
 }
 
 void CharacterClass::AddSkill(Skill& newSkill)
 {
 	classSkills.push_back(newSkill);
 	std::cout << "You've learned " << newSkill.GetSkillName() << "\n";
+}
+
+void CharacterClass::AddEquipment(Equipment& newEquipment)
+{
+	classEquipment.push_back(newEquipment);
+	std::cout << "You've acquired " << newEquipment.GetItemName() << "\n";
 }

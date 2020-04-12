@@ -45,6 +45,9 @@
     <ClInclude Include="Include\SkillList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Include\ArmourList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\CharacterClass.cpp">
