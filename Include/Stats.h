@@ -1,6 +1,16 @@
 #ifndef STATS_H
 #define STATS_H
 
+/* Class used to describe character stats.
+*  Consists of 6 different statistics:
+*  Strength (STR)
+*  Dexterity (DEX)
+*  Constitution (CON)
+*  Intelligence (INT)
+*  Wisdom (WIS)
+*  Charisma (CHA)
+*/
+
 class Stats
 {
 private:

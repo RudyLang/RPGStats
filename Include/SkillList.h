@@ -1,6 +1,10 @@
 #ifndef _SKILL_LIST_H
 #define _SKILL_LIST_H
 
+/* Predefined instances of Skills.
+*  Identified using the "combat" namespace.
+*/
+
 #include "Skill.h"
 
 namespace combat

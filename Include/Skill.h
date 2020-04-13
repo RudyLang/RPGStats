@@ -1,6 +1,11 @@
 #ifndef _SKILL_H
 #define _SKILL_H
 
+/* Class used to describe skills
+*  Skills can be passive or active, or both.
+*  They can also be associated with a type of magic.
+*/
+
 #include "pch.h"
 #include <iostream>
 #include "MagicType.h"

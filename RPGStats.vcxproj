@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Include\Character.h" />
     <ClInclude Include="Include\CharacterClass.h" />
     <ClInclude Include="Include\ClassType.h" />
     <ClInclude Include="Include\Equipment.h" />
@@ -164,6 +165,7 @@
     <ClInclude Include="Include\MagicType.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Character.cpp" />
     <ClCompile Include="Source\CharacterClass.cpp" />
     <ClCompile Include="Source\Equipment.cpp" />
     <ClCompile Include="Source\Item.cpp" />

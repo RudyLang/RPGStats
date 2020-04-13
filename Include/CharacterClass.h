@@ -1,5 +1,9 @@
-#ifndef _STATS_H
-#define _STATS_H
+#ifndef _CHARACTER_CLASS_H
+#define _CHARACTER_CLASS_H
+
+/* A characters class defines a set of initial stats,
+*  skills, and equipment.
+*/
 
 #include <iostream>
 #include <vector>
@@ -16,7 +20,7 @@ public:
 	std::vector<Skill> classSkills;
 	std::vector<Equipment> classEquipment;
 
-
+	CharacterClass();
 	CharacterClass(ClassType selectedClass);
 	void AddSkill(Skill& newSkill);
 	void AddEquipment(Equipment& newEquipment);

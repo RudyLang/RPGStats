@@ -5,6 +5,8 @@
 #include "../Include/SkillList.h"
 #include "../Include/ArmourList.h"
 
+CharacterClass::CharacterClass() { };
+
 CharacterClass::CharacterClass(ClassType selectedClass)
 {
 	Stats stats;
