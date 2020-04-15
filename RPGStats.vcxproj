@@ -154,10 +154,13 @@
     <ClInclude Include="Include\Character.h" />
     <ClInclude Include="Include\CharacterClass.h" />
     <ClInclude Include="Include\ClassType.h" />
+    <ClInclude Include="Include\EmptyState.h" />
     <ClInclude Include="Include\Equipment.h" />
     <ClInclude Include="Include\ArmourList.h" />
+    <ClInclude Include="Include\IState.h" />
     <ClInclude Include="Include\Item.h" />
     <ClInclude Include="Include\SkillList.h" />
+    <ClInclude Include="Include\StateMachine.h" />
     <ClInclude Include="Source\pch.h" />
     <ClInclude Include="Include\Skill.h" />
     <ClInclude Include="Include\Slot.h" />
