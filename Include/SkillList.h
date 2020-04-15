@@ -1,5 +1,5 @@
-#ifndef _SKILL_LIST_H
-#define _SKILL_LIST_H
+#ifndef SKILL_LIST_H
+#define SKILL_LIST_H
 
 /* Predefined instances of Skills.
 *  Identified using the "combat" namespace.

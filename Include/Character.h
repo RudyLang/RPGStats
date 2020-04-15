@@ -1,5 +1,5 @@
-#ifndef _CHARACTER_H
-#define _CHARACTER_H
+#ifndef CHARACTER_H
+#define CHARACTER_H
 
 #include "CharacterClass.h"
 

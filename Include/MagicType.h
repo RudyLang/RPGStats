@@ -1,5 +1,5 @@
-#ifndef _MAGIC_TYPE_H
-#define _MAGIC_TYPE_H
+#ifndef MAGIC_TYPE_H
+#define MAGIC_TYPE_H
 
 /* Enumeration used to identify available magic types */
 

@@ -1,5 +1,5 @@
-#ifndef _ITEM_H
-#define _ITEM_H
+#ifndef ITEM_H
+#define ITEM_H
 
 class Item
 {

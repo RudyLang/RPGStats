@@ -1,5 +1,5 @@
-#ifndef _ARMOUR_LIST_H
-#define _ARMOUR_LIST_H
+#ifndef ARMOUR_LIST_H
+#define ARMOUR_LIST_H
 
 /* Predefined instances of Equipment.
 *  Identified using the "armour" namespace.

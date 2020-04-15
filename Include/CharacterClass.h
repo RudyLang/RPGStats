@@ -1,5 +1,5 @@
-#ifndef _CHARACTER_CLASS_H
-#define _CHARACTER_CLASS_H
+#ifndef CHARACTER_CLASS_H
+#define CHARACTER_CLASS_H
 
 /* A characters class defines a set of initial stats,
 *  skills, and equipment.

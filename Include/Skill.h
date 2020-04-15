@@ -1,5 +1,5 @@
-#ifndef _SKILL_H
-#define _SKILL_H
+#ifndef SKILL_H
+#define SKILL_H
 
 /* Class used to describe skills
 *  Skills can be passive or active, or both.

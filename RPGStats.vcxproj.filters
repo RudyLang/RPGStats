@@ -51,13 +51,7 @@
     <ClInclude Include="Include\Character.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Include\IState.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Include\EmptyState.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Include\StateMachine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
