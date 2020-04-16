@@ -9,5 +9,5 @@ int main()
 	CharacterClass selectedClass(ClassType::Wizard);
 	Character character(selectedName, selectedClass);
 
-	return 0;
+	return EXIT_SUCCESS;
 }

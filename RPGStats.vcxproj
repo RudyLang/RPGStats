@@ -159,6 +159,8 @@
     <ClInclude Include="Include\ArmourList.h" />
     <ClInclude Include="Include\Item.h" />
     <ClInclude Include="Include\SkillList.h" />
+    <ClInclude Include="Include\State.h" />
+    <ClInclude Include="Include\StateMachine.h" />
     <ClInclude Include="Source\pch.h" />
     <ClInclude Include="Include\Skill.h" />
     <ClInclude Include="Include\Slot.h" />
@@ -178,6 +180,7 @@
     </ClCompile>
     <ClCompile Include="Source\main.cpp" />
     <ClCompile Include="Source\Skill.cpp" />
+    <ClCompile Include="Source\StateMachine.cpp" />
     <ClCompile Include="Source\Stats.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
