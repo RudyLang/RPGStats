@@ -2,12 +2,15 @@
 #include <iostream>
 #include "../Include/CharacterClass.h"
 #include "../Include/Character.h"
+#include "../Include/Game.h"
 
 int main()
 {
 	std::string selectedName = "Rudy";
 	CharacterClass selectedClass(ClassType::Wizard);
 	Character character(selectedName, selectedClass);
+
+	Game game;
 
 	return EXIT_SUCCESS;
 }
