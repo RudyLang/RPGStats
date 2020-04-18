@@ -11,6 +11,8 @@ CharacterClass::CharacterClass(ClassType selectedClass)
 {
 	Stats stats;
 
+	// TODO: Handle ClassType::None
+
 	switch (selectedClass)
 	{
 	case ClassType::Warrior:

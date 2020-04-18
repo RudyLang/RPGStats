@@ -10,7 +10,8 @@ enum class ClassType
 	Cleric,
 	Rogue,
 	Bard,
-	Barbarian
+	Barbarian,
+	None
 };
 
 #endif

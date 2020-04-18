@@ -153,11 +153,13 @@
   <ItemGroup>
     <ClInclude Include="Include\Character.h" />
     <ClInclude Include="Include\CharacterClass.h" />
+    <ClInclude Include="Include\CharacterCreationState.h" />
     <ClInclude Include="Include\ClassType.h" />
     <ClInclude Include="Include\EmptyState.h" />
     <ClInclude Include="Include\Equipment.h" />
     <ClInclude Include="Include\ArmourList.h" />
     <ClInclude Include="Include\Game.h" />
+    <ClInclude Include="Include\Helper.h" />
     <ClInclude Include="Include\IntroState.h" />
     <ClInclude Include="Include\Item.h" />
     <ClInclude Include="Include\MainMenuState.h" />
@@ -173,6 +175,7 @@
   <ItemGroup>
     <ClCompile Include="Source\Character.cpp" />
     <ClCompile Include="Source\CharacterClass.cpp" />
+    <ClCompile Include="Source\CharacterCreationState.cpp" />
     <ClCompile Include="Source\Equipment.cpp" />
     <ClCompile Include="Source\Game.cpp" />
     <ClCompile Include="Source\IntroState.cpp" />
