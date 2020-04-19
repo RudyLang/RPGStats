@@ -154,6 +154,7 @@
     <ClInclude Include="Include\Character.h" />
     <ClInclude Include="Include\CharacterClass.h" />
     <ClInclude Include="Include\CharacterCreationState.h" />
+    <ClInclude Include="Include\CharacterStat.h" />
     <ClInclude Include="Include\ClassType.h" />
     <ClInclude Include="Include\DEFINITIONS.h" />
     <ClInclude Include="Include\EmptyState.h" />
@@ -167,6 +168,7 @@
     <ClInclude Include="Include\SkillList.h" />
     <ClInclude Include="Include\State.h" />
     <ClInclude Include="Include\StateMachine.h" />
+    <ClInclude Include="Include\StatModifier.h" />
     <ClInclude Include="Source\pch.h" />
     <ClInclude Include="Include\Skill.h" />
     <ClInclude Include="Include\Slot.h" />
@@ -177,6 +179,7 @@
     <ClCompile Include="Source\Character.cpp" />
     <ClCompile Include="Source\CharacterClass.cpp" />
     <ClCompile Include="Source\CharacterCreationState.cpp" />
+    <ClCompile Include="Source\CharacterStat.cpp" />
     <ClCompile Include="Source\Equipment.cpp" />
     <ClCompile Include="Source\Game.cpp" />
     <ClCompile Include="Source\IntroState.cpp" />
