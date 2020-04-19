@@ -1,6 +1,7 @@
 #include "pch.h"
 #include <iostream>
 #include "../Include/CharacterCreationState.h"
+#include "../Include/GameState.h"
 #include "../Include/CharacterClass.h"
 #include "../Include/Character.h"
 #include "../Include/Helper.h"
@@ -12,7 +13,6 @@ CharacterCreationState::CharacterCreationState(GameDataRef data) : _data(data)
 
 void CharacterCreationState::Init()
 {
-	// TODO: Ask for character name here
 	std::cout << "Character Creation" << "\n";
 }
 
@@ -35,6 +35,9 @@ void CharacterCreationState::HandleInput()
 
 	CharacterClass selectedClass(helper::ConvertStringToClassType(enteredClass));
 	Character character(enteredName, selectedClass);
+
+	// Switch to Game State/Main Menu here
+	this->_data->machine.AddState(StateRef(new GameState(_data)), true);
 
 }
 

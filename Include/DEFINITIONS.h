@@ -1,0 +1,1 @@
+#define STATE_MAIN_MENU 98

@@ -66,13 +66,16 @@
     <ClInclude Include="Include\IntroState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Include\MainMenuState.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Include\CharacterCreationState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Include\Helper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\DEFINITIONS.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\GameState.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -110,10 +113,10 @@
     <ClCompile Include="Source\IntroState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\MainMenuState.cpp">
+    <ClCompile Include="Source\CharacterCreationState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\CharacterCreationState.cpp">
+    <ClCompile Include="Source\GameState.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -6,11 +6,6 @@
 
 int main()
 {
-	/*std::string selectedName = "Rudy";
-	CharacterClass selectedClass(ClassType::Wizard);
-	Character character(selectedName, selectedClass);
-	*/
-
 	Game game;
 
 	return EXIT_SUCCESS;

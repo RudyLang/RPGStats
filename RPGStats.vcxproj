@@ -155,6 +155,7 @@
     <ClInclude Include="Include\CharacterClass.h" />
     <ClInclude Include="Include\CharacterCreationState.h" />
     <ClInclude Include="Include\ClassType.h" />
+    <ClInclude Include="Include\DEFINITIONS.h" />
     <ClInclude Include="Include\EmptyState.h" />
     <ClInclude Include="Include\Equipment.h" />
     <ClInclude Include="Include\ArmourList.h" />
@@ -162,7 +163,7 @@
     <ClInclude Include="Include\Helper.h" />
     <ClInclude Include="Include\IntroState.h" />
     <ClInclude Include="Include\Item.h" />
-    <ClInclude Include="Include\MainMenuState.h" />
+    <ClInclude Include="Include\GameState.h" />
     <ClInclude Include="Include\SkillList.h" />
     <ClInclude Include="Include\State.h" />
     <ClInclude Include="Include\StateMachine.h" />
@@ -180,7 +181,7 @@
     <ClCompile Include="Source\Game.cpp" />
     <ClCompile Include="Source\IntroState.cpp" />
     <ClCompile Include="Source\Item.cpp" />
-    <ClCompile Include="Source\MainMenuState.cpp" />
+    <ClCompile Include="Source\GameState.cpp" />
     <ClCompile Include="Source\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
