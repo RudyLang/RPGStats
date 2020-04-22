@@ -10,15 +10,13 @@ class CharacterStat
 {
 public:
 	float baseValue;
+	std::vector<StatModifier> statModifiers;
 
 	CharacterStat(float baseValueIn);
 	void GetValue();
 	void AddModifier(StatModifier mod);
 	bool RemoveModifier(StatModifier mod);
 	float CalculateFinalValue();
-
-private:
-	std::vector<StatModifier> statModifier;
 };
 
 #endif

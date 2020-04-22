@@ -12,6 +12,7 @@ namespace helper
 	bool CompareChar(char& c1, char& c2);
 	bool CaseInsensitiveClassCompare(std::string& str1, std::string str2);
 	bool CaseInsensitiveStringCompare(std::string& str1, std::string& str2);
+	float Round(float var, int decimalPlaces);
 
 	ClassType ConvertStringToClassType(std::string classIn)
 	{
@@ -69,6 +70,16 @@ namespace helper
 	bool CaseInsensitiveStringCompare(std::string& str1, std::string& str2)
 	{
 		return ((str1.size() == str2.size()) && std::equal(str1.begin(), str1.end(), str2.begin(), &CompareChar));
+	}
+
+	float Round(float var, int decimalPlaces)
+	{
+		// 37.66666 * 100 =3766.66 
+		// 3766.66 + .5 =3767.16    for rounding off value 
+		// then type cast to int so value is 3767 
+		// then divided by 100 so the value converted into 37.67 
+		float value = (int)(var * (10 * decimalPlaces) + .5);
+		return (float)value / (10 * decimalPlaces);
 	}
 }
 
