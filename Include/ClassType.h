@@ -1,5 +1,5 @@
-#ifndef _CLASS_TYPE_H
-#define _CLASS_TYPE_H
+#ifndef CLASS_TYPE_H
+#define CLASS_TYPE_H
 
 /* Enumeration used to identify available classes */
 

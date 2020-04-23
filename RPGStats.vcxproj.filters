@@ -84,6 +84,9 @@
     <ClInclude Include="Include\StatModifier.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Include\StatModType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\CharacterClass.cpp">
@@ -126,6 +129,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Source\CharacterStat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Helper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

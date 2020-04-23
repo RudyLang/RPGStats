@@ -1,25 +1,36 @@
+#include "pch.h"
+#include <iostream>
 #include <algorithm>
-#include "../Include/Helper.h"
 #include "../Include/CharacterStat.h"
+#include "../Include/Helper.h"
 
 CharacterStat::CharacterStat(float baseValueIn)
 {
 	baseValue = baseValueIn;
 }
 
-void CharacterStat::GetValue()
+float CharacterStat::GetValue()
 {
-	return CalculateFinalValue();
+	if (isDirty)
+	{
+		_value = CalculateFinalValue();
+		isDirty = false;
+	}
+	return _value;
 }
 
 void CharacterStat::AddModifier(StatModifier mod)
 {
+	isDirty = true;
 	statModifiers.push_back(mod);
 }
 
 bool CharacterStat::RemoveModifier(StatModifier mod)
 {
-	/*std::vector<int>::iterator position = std::find(statModifiers.begin(), statModifiers.end(), mod);
+	// TODO: Overload std::find for StatModifier type
+	/*	isDirty = true;
+	
+	std::vector<int>::iterator position = std::find(statModifiers.begin(), statModifiers.end(), mod);
 	if (position != statModifiers.end())
 	{
 		statModifiers.erase(position);
@@ -29,6 +40,7 @@ bool CharacterStat::RemoveModifier(StatModifier mod)
 	{
 		return false;
 	}*/
+	return false;
 }
 
 float CharacterStat::CalculateFinalValue()
@@ -37,7 +49,18 @@ float CharacterStat::CalculateFinalValue()
 
 	for (int i = 0; i < statModifiers.size(); i++)
 	{
-		finalValue += statModifiers[i].value;
+		StatModifier mod = statModifiers[i];
+
+		// Flat stats (e.g. +20) should simply be added
+		if (mod.type == StatModType::Flat)
+		{
+			finalValue += mod.value;
+		}
+		// Percentage stats (e.g. 0.15 or 15%) need to be added to 1 and then multiplied 
+		else if (mod.type == StatModType::Percent)
+		{
+			finalValue *= 1 + mod.value;
+		}
 	}
 
 	// Round to avoid float calculation errors:
