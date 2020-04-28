@@ -22,6 +22,8 @@ public:
 private:
 	bool isDirty = true;
 	float _value;
+
+	int CompareModifierOrder(StatModifier a, StatModifier b);
 };
 
 #endif

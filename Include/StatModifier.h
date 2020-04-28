@@ -22,7 +22,8 @@ public:
 		order = orderIn;
 	}
 
-	StatModifier(float valueIn, StatModType typeIn) : StatModifier(valueIn, typeIn, static_cast<int>(typeIn)) { }
+	// Now we can set the order of the modifiers
+	StatModifier(float valueIn, StatModType typeIn) : StatModifier(valueIn, typeIn, static_cast<int>(typeIn)) { } // Delegating Constructor
 };
 
 #endif
