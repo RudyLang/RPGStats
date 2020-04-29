@@ -60,6 +60,7 @@ bool CharacterStat::RemoveModifier(StatModifier mod)
 float CharacterStat::CalculateFinalValue()
 {
 	float finalValue = baseValue;
+	float sumPercentAdd = 0;
 
 	for (int i = 0; i < statModifiers.size(); i++)
 	{
@@ -70,8 +71,22 @@ float CharacterStat::CalculateFinalValue()
 		{
 			finalValue += mod.value;
 		}
+
+		// 
+		else if (mod.type == StatModType::PercentAdd)
+		{
+			sumPercentAdd += mod.value;
+
+			// If we're at the end of the list OR the next modifier isn't of this type
+			if (i + 1 >= statModifiers.size() || statModifiers[i + 1].type != StatModType::PercentAdd)
+			{
+				finalValue *= 1 + sumPercentAdd; // Multiply the sum with the "finalValue"
+				sumPercentAdd = 0; // Reset the sum back to 0
+			}
+		}
+
 		// Percentage stats (e.g. 0.15 or 15%) need to be added to 1 and then multiplied 
-		else if (mod.type == StatModType::Percent)
+		else if (mod.type == StatModType::PercentMult)
 		{
 			finalValue *= 1 + mod.value;
 		}

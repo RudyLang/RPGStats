@@ -4,7 +4,8 @@
 enum class StatModType
 {
 	Flat,
-	Percent
+	PercentAdd,
+	PercentMult
 };
 
 #endif
