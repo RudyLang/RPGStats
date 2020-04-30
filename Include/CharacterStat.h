@@ -23,7 +23,7 @@ private:
 	bool isDirty = true;
 	float _value;
 
-	int CompareModifierOrder(StatModifier a, StatModifier b);
+	static bool CompareModifierOrder(const StatModifier& a, const StatModifier& b); // Independent object, needed for std::sort()
 };
 
 #endif
