@@ -166,6 +166,7 @@
     <ClInclude Include="Include\Item.h" />
     <ClInclude Include="Include\GameState.h" />
     <ClInclude Include="Include\SkillList.h" />
+    <ClInclude Include="Include\SourceType.h" />
     <ClInclude Include="Include\State.h" />
     <ClInclude Include="Include\StateMachine.h" />
     <ClInclude Include="Include\StatModifier.h" />

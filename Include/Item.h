@@ -13,6 +13,8 @@ public:
 	std::string GetItemName();
 	std::string GetItemDescription();
 	float GetModifier();
+	void EquipItem();
+	void UnequipItem();
 };
 
 #endif
